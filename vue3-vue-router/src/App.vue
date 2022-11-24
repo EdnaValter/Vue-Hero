@@ -5,7 +5,11 @@
     <router-link to="/test">Test</router-link>
   </nav>
   <router-view/>
+  
+  <!-- footer -->
+  <footer>Footer</footer>
 </template>
+
 
 <style lang="scss">
 #app {
