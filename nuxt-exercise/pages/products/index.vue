@@ -1,15 +1,14 @@
 <template>
     <div>
         <div class="grid grid-cols-4 gap-5">
-            <h1>Products</h1>
             <div v-for="p in products">
-                <NuxtLink :to="`/products/${p.id}`"> {{ p.title }} </NuxtLink> 
+                <ProductCard :product="p"/>
             </div>
         </div>
     </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 // nuxt can render data from both client and server thios is called universal rendering
     definePageMeta({
         layout: 'products',
